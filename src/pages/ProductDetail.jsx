@@ -16,6 +16,7 @@ export const ProductDetail = () => {
          fetchdetails();
   },[id]);
 
+  
   return (
       <main>
         <section>

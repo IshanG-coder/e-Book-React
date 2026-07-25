@@ -2,11 +2,14 @@ import { useEffect, useState } from "react";
 import Logo from "../../assets/logo.png";
 import {Link } from "react-router-dom";
 import { Search } from "../Sections/Search";
+import { DropdownLogout , DropdownLogin} from "../index";
 
 export const Header = () => {
  
   const [darkMode,setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode"))||false);
   const [searchbar,setSearchBar]=useState(false);
+  const [dropdown , setDropDown] = useState(false);
+  const token = JSON.parse(sessionStorage.getItem("token"));
 
   useEffect(()=>{
     localStorage.setItem("darkMode",JSON.stringify(darkMode));      
@@ -36,10 +39,10 @@ export const Header = () => {
                     </span>                    
                   </Link>
                
-                 <span className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>
+                 <span onClick={()=> setDropDown(!dropdown)} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>
+                 { dropdown &&(token ? <DropdownLogin setDropDown={setDropDown} /> : <DropdownLogout />) }
+               </div>
               </div>
-            
-                </div>
              </nav>
            {searchbar && <Search SearchBar={setSearchBar} />}  
     </header>
