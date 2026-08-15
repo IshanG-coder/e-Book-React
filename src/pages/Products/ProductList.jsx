@@ -15,7 +15,7 @@ export const ProductList = () => {
 
   useEffect(()=>{
              async function fetchProductList(){
-              const response = await fetch(` http://localhost:8000/products?name_like=${searchTerm ? searchTerm : ""} `);
+              const response = await fetch(`http://localhost:8000/products?name_like=${searchTerm ? searchTerm : ""} `);
               const data = await response.json()
               //  setProducts(data);
               initialTotalProduct(data);

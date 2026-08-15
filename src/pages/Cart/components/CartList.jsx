@@ -2,10 +2,11 @@ import { useState } from "react"
 
 import { CartCard } from "./CartCard"
 import { CheckOut } from "./CheckOut"
+import { useCart } from "../../../context/cartContext"
 
 export const CartList = () => {
   const [checkout, setCheckout] = useState(false);
-  
+  const {cartList,total} = useCart();
 
   return (
     <>

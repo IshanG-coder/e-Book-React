@@ -5,6 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ScrollToTop } from './components/index.jsx';
 import { FilterProvider } from './context/FilterContext.jsx';
+import { CartProvider } from './context/cartContext.jsx';
 
 import { ToastContainer } from 'react-toastify';
 
@@ -14,11 +15,13 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
+      <CartProvider >
       <FilterProvider >
       <ScrollToTop />
       <ToastContainer closeButton={false} autoClose={3000} position={"top-center"} />
         <App />
         </FilterProvider>
+        </CartProvider>
     </Router>
   
   </StrictMode>,

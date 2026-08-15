@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
+import { useCart } from "../../../context/cartContext"
 
 
 export const CartCard = ({product}) => {
+ 
+  const {removeFromCart} = useCart();
 
   return (
     <div className="flex flex-wrap justify-between border-b dark:border-slate-700 max-w-4xl m-auto p-2 mb-5 ">

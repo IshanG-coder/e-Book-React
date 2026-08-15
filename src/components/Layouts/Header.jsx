@@ -3,9 +3,10 @@ import Logo from "../../assets/logo.png";
 import {Link } from "react-router-dom";
 import { Search } from "../Sections/Search";
 import { DropdownLogout , DropdownLogin} from "../index";
+import { useCart } from "../../context/cartContext";
 
 export const Header = () => {
- 
+  const {cartList} = useCart();
   const [darkMode,setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode"))||false);
   const [searchbar,setSearchBar]=useState(false);
   const [dropdown , setDropDown] = useState(false);
@@ -35,7 +36,7 @@ export const Header = () => {
               
                <Link to="/cart" className="text-gray-700 dark:text-white mr-5">
                     <span className="text-2xl bi bi-cart-check-fill relative">
-                      <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">0</span>
+                      <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">{cartList.length}</span>
                     </span>                    
                   </Link>
                
