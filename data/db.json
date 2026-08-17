@@ -289,6 +289,12 @@
       "password": "$2a$10$2DvYhzDyHitVVGgbP6Twj.XWzKhQNHjSU.BPd3TWDjJma43prjTUu",
       "name": "Arish",
       "id": 2
+    },
+    {
+      "email": "roshan@123",
+      "password": "$2a$10$SnUAIonNIg6mRhKuvYPnSObmVI74stenSHCbRpZV86sAfddV/Fp5C",
+      "name": "Ishan",
+      "id": 3
     }
   ]
 }
