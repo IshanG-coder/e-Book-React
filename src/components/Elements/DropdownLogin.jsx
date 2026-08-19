@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { logout } from "../../services";
 
 export const DropdownLogin = ({setDropDown}) => {
  
    const navigate = useNavigate();
 
     function handleLogout(){
-        sessionStorage.removeItem("token");
-        sessionStorage.removeItem("cbid");
+
+        // sessionStorage.removeItem("token");
+        // sessionStorage.removeItem("cbid");
+
+        logout();
         setDropDown(false);
         navigate("/");
     }
@@ -22,7 +26,7 @@ export const DropdownLogin = ({setDropDown}) => {
                 <Link onClick={()=>setDropDown(false)}  to="/products" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">All eBooks</Link>
             </li>
             <li>
-                <Link onClick={()=>setDropDown(false)} className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</Link>
+                <Link onClick={()=>setDropDown(false)} to="/dashboard" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</Link>
             </li>
         </ul>
         <div className="py-1">

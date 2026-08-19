@@ -1,8 +1,7 @@
-import { useState } from "react"
-
-import { CartCard } from "./CartCard"
+import { useState } from "react" 
 import { CheckOut } from "./CheckOut"
 import { useCart } from "../../../context/cartContext"
+import {CartCard} from "./CartCard"
 
 export const CartList = () => {
   const [checkout, setCheckout] = useState(false);
