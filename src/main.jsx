@@ -5,7 +5,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ScrollToTop } from './components/index.jsx';
 import { FilterProvider } from './context/FilterContext.jsx';
-import { CartProvider } from './context/cartContext.jsx';
+import { CartProvider } from './context/CartContext.jsx';
 
 import { ToastContainer } from 'react-toastify';
 

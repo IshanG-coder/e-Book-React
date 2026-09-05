@@ -5,7 +5,7 @@ import { useCart } from "../../context/cartContext";
 import { useEffect, useState } from "react";
 
 export const ProductCard = ({product}) => {
-    const {id,name,price,image_local,overview,rating,best_seller,poster} = product;
+    const {id,name,price,overview,rating,best_seller,poster} = product;
     const {cartList,addToCart,removeFromCart} = useCart();
     const [inCart , setInCart] = useState(false);
 
