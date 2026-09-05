@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // import BOOK1 from "../../assets/images/book1.jpg";
 import { Rating } from "./Rating";
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../context/CartContext";
 import { useEffect, useState } from "react";
 
 export const ProductCard = ({product}) => {

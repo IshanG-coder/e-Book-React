@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.png";
 import {Link } from "react-router-dom";
 import { Search } from "../Sections/Search";
 import { DropdownLogout , DropdownLogin} from "../index";
-import { useCart } from "../../context/cartContext";
+import { useCart } from "../../context/CartContext";
 
 export const Header = () => {
   const {cartList} = useCart();
