@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BOOK1 from "../../assets/images/book1.jpg";
+// import BOOK1 from "../../assets/images/book1.jpg";
 import { Rating } from "./Rating";
 import { useCart } from "../../context/cartContext";
 import { useEffect, useState } from "react";
@@ -18,12 +18,7 @@ export const ProductCard = ({product}) => {
         }else{
             setInCart(false);
         }
-
     }, [cartList,product.id]);
-
-    // function HandleCart(product){
-    //         addToCart(product);
-    // }
 
   return (
      <div className="m-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">

@@ -241,60 +241,54 @@
     {
       "cartList": [
         {
-          "id": 10001,
-          "name": "Basics To Advanced In React",
+          "id": 10004,
+          "name": "The Complete Guide to Backend Development",
           "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
           "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10001.avif",
+          "price": 99,
+          "poster": "https://images.unsplash.com/photo-1595617795501-9661aafda72a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
+          "image_local": "/assets/images/10004.avif",
           "rating": 5,
           "in_stock": true,
-          "size": 5,
+          "size": 7,
           "best_seller": true
         },
         {
-          "id": 10008,
-          "name": "JavaScript Basics To Advance With Shubham",
+          "id": 10006,
+          "name": "Frontend Fastlane Plan With Projects",
           "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
           "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1613490900233-141c5560d75d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10008.avif",
+          "price": 99,
+          "poster": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
+          "image_local": "/assets/images/10006.avif",
           "rating": 5,
           "in_stock": true,
-          "size": 3,
-          "best_seller": true
+          "size": 10,
+          "best_seller": false
         }
       ],
-      "amount_paid": 58,
+      "amount_paid": 198,
       "quantity": 2,
       "user": {
-        "name": "Shubham Sarda",
-        "email": "shubham@example.com",
-        "id": 1
+        "name": "Ishan",
+        "email": "ishan@example.com",
+        "id": 2
       },
       "id": 1
     }
   ],
   "users": [
     {
-      "email": "ishan@123",
-      "password": "$2a$10$I6zlf3pkxLVe.EtqAS0duupycKrVc1g1RrKVSEmDlvoZfS7uu0eM.",
-      "name": "ishan",
-      "id": 1
-    },
-    {
-      "email": "arish@123",
-      "password": "$2a$10$2DvYhzDyHitVVGgbP6Twj.XWzKhQNHjSU.BPd3TWDjJma43prjTUu",
-      "name": "Arish",
-      "id": 2
-    },
-    {
       "email": "roshan@123",
       "password": "$2a$10$SnUAIonNIg6mRhKuvYPnSObmVI74stenSHCbRpZV86sAfddV/Fp5C",
       "name": "Ishan",
-      "id": 3
+      "id": 1
+    },
+    {
+      "email": "ishan@example.com",
+      "password": "$2a$10$QbKpMDIiOoVBo9.DKPVbeOpO.kQmEKgplcUPcXf/X0N2OTfo4N1HW",
+      "name": "Ishan",
+      "id": 2
     }
   ]
 }
