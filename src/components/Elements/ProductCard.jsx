@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 // import BOOK1 from "../../assets/images/book1.jpg";
 import { Rating } from "./Rating";
-import { useCart } from "../../context/CartContext";
 import { useEffect, useState } from "react";
+import { useCart } from "../../context/CartContext";
+
 
 export const ProductCard = ({product}) => {
     const {id,name,price,overview,rating,best_seller,poster} = product;
